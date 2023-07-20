@@ -62,13 +62,13 @@ Standardize the case of the data and use a tokenizer to convert the full posts i
 
 #### 3. Build and Evaluate a Baseline Model with `TfidfVectorizer` and `MultinomialNB`
 
-Ultimately all data must be in numeric form in order to be able to fit a scikit-learn model. So we'll use a tool from `sklearn.feature_extraction.text` to convert all data into a vectorized format.
+Ultimately all data must be in numeric form in order to be able to fit a scikit-learn model. So I'll use a tool from `sklearn.feature_extraction.text` to convert all data into a vectorized format.
 
 Initially I'll keep all of the default parameters for both the vectorizer and the model, in order to develop a baseline score.
 
 #### 4. Iteratively Perform and Evaluate Preprocessing and Feature Engineering Techniques
 
-Here you will investigate three techniques, to determine whether they should be part of our final modeling process:
+Here I will investigate three techniques, to determine whether they should be part of my final modeling process:
 
 1. Removing stopwords
 2. Using custom tokens
@@ -77,17 +77,17 @@ Here you will investigate three techniques, to determine whether they should be 
 
 #### 5. Evaluate a Final Model on the Test Set
 
-Once you have chosen a final modeling process, fit it on the full training data and evaluate it on the test data. 
+Once I have chosen a final modeling process, I will fit it on the full training data and evaluate it on the test data. 
 
 ## 1. Load the Data
 
-In the cell below, create the variables `newsgroups_train` and `newsgroups_test` by calling the `fetch_20newsgroups` function twice.
+In the cell below, I will create the variables `newsgroups_train` and `newsgroups_test` by calling the `fetch_20newsgroups` function twice.
 
-For the train set, specify `subset="train"`. For the test set, specify `subset="test"`.
+For the train set, I specify `subset="train"`. For the test set, I specify `subset="test"`.
 
-Additionally, pass in `remove=('headers', 'footers', 'quotes')` in both function calls, in order to automatically remove some metadata that can lead to overfitting.
+Additionally, I passed in `remove=('headers', 'footers', 'quotes')` in both function calls, in order to automatically remove some metadata that can lead to overfitting.
 
-Recall that we are loading only five categories, out of the full 20. So, pass in `categories=categories` both times.
+Recall that I am loading only five categories, out of the full 20. So, I pass in `categories=categories` both times.
 
 
 ```python
