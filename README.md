@@ -30,11 +30,11 @@ The task is to try to identify the category where a post was published, based on
 
 Part of what I am practicing here is using the `sklearn.datasets` submodule, which I have seen before (e.g. the Iris Dataset, the Wine Dataset). You can see a full list of available dataset loaders [here](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.datasets).
 
-In this case I will be using the `fetch_20newsgroups` function ([documentation here](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_20newsgroups.html)). An important thing to note is that because this is text data, scikit-learn actually downloads a set of documents to the computer you are using to complete this lab, rather than just loading data into memory in Python.
+In this case I will be using the `fetch_20newsgroups` function ([documentation here](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_20newsgroups.html)). An important thing to note is that because this is text data, scikit-learn actually downloads a set of documents to the computer I am using to complete this lab, rather than just loading data into memory in Python.
 
 #### Features
 
-Prior to preprocessing, every row in the dataset only contains one feature: a string containing the full text of the newsgroup post. We will perform preprocessing to create additional features.
+Prior to preprocessing, every row in the dataset only contains one feature: a string containing the full text of the newsgroup post. I will perform preprocessing to create additional features.
 
 #### Target
 
@@ -42,7 +42,7 @@ As you might have guessed based on the function name, there are 20 categories in
 
 <img src='classes.png'>
 
-This full dataset is quite large. To save us from extremely long runtimes, we'll work with only a subset of the classes. For this lab, we'll work with the following five:
+This full dataset is quite large. To save from extremely long runtimes, I'll work with only a subset of the classes. For this lab, I'll work with the following five:
 
 * `'comp.windows.x'`
 * `'rec.sport.hockey'`
@@ -64,7 +64,7 @@ Standardize the case of the data and use a tokenizer to convert the full posts i
 
 Ultimately all data must be in numeric form in order to be able to fit a scikit-learn model. So we'll use a tool from `sklearn.feature_extraction.text` to convert all data into a vectorized format.
 
-Initially we'll keep all of the default parameters for both the vectorizer and the model, in order to develop a baseline score.
+Initially I'll keep all of the default parameters for both the vectorizer and the model, in order to develop a baseline score.
 
 #### 4. Iteratively Perform and Evaluate Preprocessing and Feature Engineering Techniques
 
