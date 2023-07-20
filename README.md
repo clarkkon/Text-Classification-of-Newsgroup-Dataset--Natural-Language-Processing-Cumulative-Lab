@@ -2,11 +2,11 @@
 
 ## Introduction
 
-In this cumulative lab, we'll use everything we've learned so far to build a model that can classify a text document as one of many possible classes!
+In this cumulative lab, I'll use everything I've learned so far to build a model that can classify a text document as one of many possible classes!
 
 ## Objectives
 
-You will be able to:
+I will be able to:
 
 - Practice cleaning and exploring a text dataset with NLTK and base Python
 - Practice using scikit-learn vectorizers for text preprocessing
@@ -14,7 +14,7 @@ You will be able to:
 - Observe some techniques for feature engineering
 - Interpret the result of a final ML model that classifies text data
 
-## Your Task: Complete an End-to-End ML Process with the Newsgroups Dataset
+## My Task: Complete an End-to-End ML Process with the Newsgroups Dataset
 
 <a title="Bundesarchiv, B 145 Bild-F077948-0006 / Engelbert Reineke / CC-BY-SA 3.0, CC BY-SA 3.0 DE &lt;https://creativecommons.org/licenses/by-sa/3.0/de/deed.en&gt;, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Bundesarchiv_B_145_Bild-F077948-0006,_Jugend-Computerschule_mit_IBM-PC.jpg"><img width="512" alt="Bundesarchiv B 145 Bild-F077948-0006, Jugend-Computerschule mit IBM-PC" src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Bundesarchiv_B_145_Bild-F077948-0006%2C_Jugend-Computerschule_mit_IBM-PC.jpg"></a>
 
@@ -28,9 +28,9 @@ The task is to try to identify the category where a post was published, based on
 
 #### Data Source
 
-Part of what you are practicing here is using the `sklearn.datasets` submodule, which you have seen before (e.g. the Iris Dataset, the Wine Dataset). You can see a full list of available dataset loaders [here](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.datasets).
+Part of what I am practicing here is using the `sklearn.datasets` submodule, which I have seen before (e.g. the Iris Dataset, the Wine Dataset). You can see a full list of available dataset loaders [here](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.datasets).
 
-In this case we will be using the `fetch_20newsgroups` function ([documentation here](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_20newsgroups.html)). An important thing to note is that because this is text data, scikit-learn actually downloads a set of documents to the computer you are using to complete this lab, rather than just loading data into memory in Python.
+In this case I will be using the `fetch_20newsgroups` function ([documentation here](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.fetch_20newsgroups.html)). An important thing to note is that because this is text data, scikit-learn actually downloads a set of documents to the computer you are using to complete this lab, rather than just loading data into memory in Python.
 
 #### Features
 
